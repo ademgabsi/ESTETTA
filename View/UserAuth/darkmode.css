@@ -1,0 +1,31 @@
+
+        /* Dark mode toggle button styling */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px;
+            /* Adjust padding for size */
+            background: linear-gradient(45deg, #3498db, #8e44ad);
+            /* Use a gradient background */
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            /* Make it a circle */
+            cursor: pointer;
+            z-index: 999;
+            transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+            font-size: 24px;
+            /* Increase font size */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            /* Add box-shadow for a stylish effect */
+        }
+
+        .dark-mode-toggle:hover {
+            background: linear-gradient(45deg, #2980b9, #9b59b6);
+            /* Adjust the hover gradient */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            /* Add a larger box-shadow on hover */
+            transform: scale(1.1);
+            /* Add a slight scale on hover for emphasis */
+        }

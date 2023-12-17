@@ -1,0 +1,24 @@
+.course-info {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: left;
+  }
+
+  .course-info td {
+    padding: 10px;
+    border-bottom: 5px solid #a70606;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 700px) {
+    .course-info td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      max-width: none;
+    }
+  }
