@@ -1,6 +1,6 @@
 <?php
-include '../../config.php';
 include SITE_ROOT . '/Controller/UserC.php';
+include '../../config.php';
 
 $userC = new UserC();
 $message = [];
@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
 
 
     $row = $userC->login($email, $pass);
-
+ 
     if ($row) {
         setcookie('user_id', $row['id'], time() + 60 * 60 * 24 * 30, '/');
         if ($row['role'] == 0) {
